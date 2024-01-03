@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+    <title>Signup Form</title>
+</head>
+<body id="body">
+    <section id="loginsec1" class="loginsec2">
+        <img src="img/logo.png" width="70px"height="70px" alt="">
+        <p>Welcome to tutoring.com</p>
+    </section>
+    <section class="loginsec2">
+    <form action="#" id="loginform" onsubmit="validate()">
+        <fieldset>
+            <legend>Login here</legend>
+            <p id="err"></p>
+            <error id="erra"></error>
+            <div>
+                <label >Name</label>
+                <input type="text" placeholder="Please enter name">
+            </div>
+
+            <div>
+                <label >Email ID</label>
+                <input type="text" placeholder="Please enter Valid email" onkeyup="white(this.value)">
+            </div>
+            <div>
+                <label >Phone No.</label>
+                <input type="text" placeholder="Please enter Valid number" onkeyup="num(this)" >
+            </div>
+
+            <div class="password">
+                <label>Password</label>
+                <input type="Password" id="password" onkeyup="white(this.value)" placeholder="Please enter your Password">
+                <i id="showpassword" onclick="togel(this)"  class="fa-solid fa-eye"></i>
+            </div>
+
+            <div>
+                <label>Confirm Password</label>
+                <input type="text"onkeyup="check(this)" placeholder="Please enter your C Password">
+            </div>
+            <button type="submit" >Signup</button>
+            <button>Clear</button>
+
+            
+
+            
+        </fieldset>
+
+    </form>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
